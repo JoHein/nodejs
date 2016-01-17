@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Pictionnary - Inscription</title>
+    <link rel="stylesheet" media="screen" href="/css/styles.css" >
+    <link rel="stylesheet" media="screen" href="/css/bootstrap.css" >
+
+</head>
+    <% include header %>
+<section class="container">
+
+    <h3>Votre profil</h3>
+    <ul>
+        <li>Email: <%= email %></li>
+        <li>Nom: <%= nom %></li>
+        <li>Prenom: <%= prenom %></li>
+        <li>Ville: <%= ville %></li>
+        <li>Taille: <%= taille %></li>
+        <li>Couleur: <%= couleur %></li>
+
+        <li>Date de naissance: <%= birthdate.slice(0,10) %></li>
+        <li>Votre image: <img src="<%= profilepic %>"/></li>
+    </ul>
+
+    <a id="modification" href="/modification">Modification</a>
+    <a id="supression" href="/supression">Supression</a>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<% include header %>
+<link rel="stylesheet" media="screen" href="/css/styles.css" >
+<link rel="stylesheet" media="screen" href="/css/bootstrap.css" >
+<html>
+<body>
+<div>
+    <h4>Vous devez vous identifer pour jouer!</h4>
+    <a href="/inscription">Inscription</a>
+    <a href="/Pictionnary/paint.php">Jouer!</a>
+</div>
+
+<h3>Vos dessins:</h3>
+
+<% for(var i=0; i<idpic.length; i++) {%>
+<a href="/guess?id=<%= idpic[i]['idpic'] %>">Dessin <%= [i] %></a>
+<% } %>

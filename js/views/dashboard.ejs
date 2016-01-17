@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Pictionnary - Inscription</title>
+    <link rel="stylesheet" media="screen" href="/css/styles.css" >
+    <link rel="stylesheet" media="screen" href="/css/bootstrap.css" >
+
+</head>
+    <% include header %>
+<section class="container">
+
+    <h3>Dashboard</h3>
+    <% for(var i=0; i<user.length; i++) {%>
+    <table>
+        <tr>
+            <td><%= user[i]['email'] %></td>
+            <td><a href="/modification?iduser=<%= user[i]['id'] %>">User<%= [i] %></a></td>
+        </tr>
+    <% } %>
+    </table>
+
+</section>
+</body>
+</html>
